@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: fivetran
+    schema: sales_raw  # Replace with your actual schema name
+    tables:
+      - name: customers
+        freshness:
+          warn_after: {count: 1, period: minute}
+          error_after: {count: 30, period: minute}
+      - name: orders
+      - name: products

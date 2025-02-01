@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "staging table for orders data"
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+          
+  - name: fact_monthly_sales
+    description: "fact table for sales data"
+    columns:
+      - name: total_sales
+        tests:
+          - not_null

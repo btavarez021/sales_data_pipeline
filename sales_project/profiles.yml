@@ -1,0 +1,13 @@
+sales_project:
+  outputs:
+    dev:
+      account: JVB37916.us-east-1
+      database: SALES_DB
+      password: PythonIsAwesome*034*
+      role: FIVETRAN_ROLE
+      schema: "{{ env_var('DBT_SCHEMA', 'sales') }}"
+      threads: 4
+      type: snowflake
+      user: btava001
+      warehouse: FIVETRAN_WAREHOUSE
+  target: dev
