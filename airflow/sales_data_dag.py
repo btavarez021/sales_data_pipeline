@@ -69,8 +69,8 @@ def del_s3_files(bucket_name, file_names, s3_client):
         print("No valid objects to delete")
 
 # Your Fivetran API credentials and connector details
-FIVETRAN_API_KEY = "EIpnU1lnKHgBR0jJ"
-FIVETRAN_API_SECRET = "QlxQuWIXKBkVvWPATKfNF9O40fqTMAif"
+FIVETRAN_API_KEY = ""
+FIVETRAN_API_SECRET = ""
 FIVETRAN_CONNECTOR_ID = ["gating_forefront","adjoining_defiant","ditches_reforest"]
 encoded_credentials = base64.b64encode(f"{FIVETRAN_API_KEY}:{FIVETRAN_API_SECRET}".encode()).decode()
 
